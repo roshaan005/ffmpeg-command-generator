@@ -1,0 +1,23 @@
+{
+  "name": "ffmpeg-command-generator",
+  "version": "1.0.0",
+  "description": "const videoNameInput = document.getElementById(\"videoName\"); const link  = document.getElementById(\"link\"); const result = document.getElementById(\"result\"); const enterBtn = document.querySelector(\".enter\");",
+  "main": "index.js",
+  "scripts": {
+    "build":"tailwind build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshaan005/ffmpeg-command-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roshaan005/ffmpeg-command-generator/issues"
+  },
+  "homepage": "https://github.com/roshaan005/ffmpeg-command-generator#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
+}
