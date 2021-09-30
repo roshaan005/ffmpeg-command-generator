@@ -32244,6 +32244,14 @@ video {
   content: none;
 }
 
+.w-150 {
+  width: 85rem;
+}
+
+.w-100{
+  width:40rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
