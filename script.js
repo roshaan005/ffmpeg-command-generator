@@ -11,7 +11,6 @@ const apendToDOM = function(answer){
 }
 const splitLink = function(link){
     const newLink = link.split("&")[0];
-    console.log(newLink)
     return newLink;
 }
 
@@ -19,14 +18,24 @@ const splitLink = function(link){
 
 
 enterBtn.addEventListener("click",function(){
-    let  rawLink = link.value;
-    let  formattedLink = splitLink(rawLink);
-    let  videoName = videoNameInput.value;
-    let formattedCommand = `ffmpeg -i ${formattedLink} -c copy ${videoName}.mkv`
+    if(link.value ==""||videoNameInput.value == ""){
+        alert("please fill in the details")
+        return 
 
-    apendToDOM(formattedCommand)
-    link.value = ""
-    videoNameInput.value = ""
+    }
+    else{
+        let  rawLink = link.value;
+        let  formattedLink = splitLink(rawLink);
+        let  videoName = videoNameInput.value;
+        let formattedCommand = `ffmpeg -i ${formattedLink} -c copy ${videoName}.mkv`
+    
+        apendToDOM(formattedCommand)
+        link.value = ""
+
+    }
+   
+   
+   
     
 })
 
