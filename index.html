@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>ffmpeg-command-generator</title>
+</head>
+<body class = "bg-black">
+<div class = "w-full bg-red-100 h-44 flex sm:flex-cols items-center justify-center">
+    <div class = "mr-16">
+        <label class = "mr-4">Video Name</label>
+        <input id = "videoName" class = "h-9" type = "text">
+
+    </div>
+   <div>
+    <label class = "mr-4">link</label>
+    <input id = "link" class = "h-9" type = "text">
+
+   </div>
+    
+    <button id = "enter" class = "h-8 w-16 rounded ml-10 bg-red-200 hover:bg-red-400">Enter</button>
+
+
+</div>
+
+ <div class = " flex justify-center items-center bg-red-300  h-20">
+     <div  class = "p-3 flex items-center mr-4 w-96 h-10 bg-red-200 truncate"><input class = "bg-red-200 truncate w-96" id = "result"></div>
+     <svg id = "copy" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+
+ </div>
+   
+
+
+    <script src = script.js></script>
+</body>
+</html>
